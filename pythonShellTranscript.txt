@@ -1,0 +1,84 @@
+Python 3.6.2 (v3.6.2:5fd33b5926, Jul 16 2017, 20:11:06) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "copyright", "credits" or "license()" for more information.
+>>> "U" in "UCSB"
+True
+>>> "U" in "Cal Poly"
+False
+>>> "U" in "UUUUU"
+True
+>>> name="Conrad"
+>>> name[0]
+'C'
+>>> name[-1]
+'d'
+>>> name[1:5]
+'onra'
+>>> name[1:]
+'onrad'
+>>> name[:-1]
+'Conra'
+>>> name[:]
+'Conrad'
+>>> 
+== RESTART: /Users/pconrad/github/ucsb-cs8/Lecture13_0906/secondLargest.py ==
+>>> secondLargest([3,4,5])
+'stub'
+>>> 
+== RESTART: /Users/pconrad/github/ucsb-cs8/Lecture13_0906/secondLargest.py ==
+>>> 
+== RESTART: /Users/pconrad/github/ucsb-cs8/Lecture13_0906/secondLargest.py ==
+>>> myList=[4,10,2,6]
+>>> secondLargest(myList)
+6
+>>> myList
+[2, 4, 6, 10]
+>>> 
+== RESTART: /Users/pconrad/github/ucsb-cs8/Lecture13_0906/secondLargest.py ==
+>>> myList=[4,10,2,6]
+>>> secondLargest(myList)
+6
+>>> localCopy
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    localCopy
+NameError: name 'localCopy' is not defined
+>>> myList
+[4, 10, 2, 6]
+>>> 
+>>> george = 7
+>>> abel = george
+>>> abel = abel + 9
+>>> abel
+16
+>>> george
+7
+>>> georgeList=[15,32,64]
+>>> abelList = georgeList
+>>> abelList.append(7)
+>>> abelList
+[15, 32, 64, 7]
+>>> georgeList
+[15, 32, 64, 7]
+>>> 
+ RESTART: /Users/pconrad/github/ucsb-cs8/Lecture13_0906/secondLargestAnotherTry.py 
+>>> mymyList=[4,10,2,6]
+>>> myList
+Traceback (most recent call last):
+  File "<pyshell#30>", line 1, in <module>
+    myList
+NameError: name 'myList' is not defined
+>>> mymyList
+[4, 10, 2, 6]
+>>> secondLargest(mymyList)
+6
+>>> mymyList
+[2, 4, 6, 10]
+>>> georgeList=[3,6,9]
+>>> abelList=georgeList[:]
+>>> abelList.append(8)
+>>> abelList
+[3, 6, 9, 8]
+>>> georgeList
+[3, 6, 9]
+>>> 
