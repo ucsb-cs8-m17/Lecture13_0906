@@ -3,7 +3,8 @@ import pytest
 def countAs(s):
   " count a and A in string s "
   if type(s)!=str:
-      raise ValueError('parameter to countAs should be of type str')
+        raise ValueError \
+          ('param to countAs should be of type str, you fool!')
   count = 0
   for c in s:
       if c=='a' or c=='A':
